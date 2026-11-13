@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Dentista em Mogi das Cruzes 24h | Dra. Nathalia F. M. Morais</title>
 <meta name="description" content="Odontologia especializada com a Dra. Nathalia F. M. Morais. Atendimento humanizado, estética do sorriso, prevenção e reabilitação em um consultório no Centro de Mogi das Cruzes. Urgência odontológica 24 horas. Agende pelo WhatsApp (11) 97430-4085.">
 <meta property="og:title" content="Dra. Nathalia F. M. Morais | Odontologia Especializada">
@@ -255,6 +255,81 @@ footer .brand span{color:var(--cream)}
 }
 @media(max-width:560px){.features,.steps{grid-template-columns:1fr}.info-list div{grid-template-columns:1fr;gap:4px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.clip,.line>span{opacity:1!important;transform:none!important;clip-path:none!important}}
+
+/* ===== MOBILE 100% (ajustes) ===== */
+html{overflow-x:clip;-webkit-text-size-adjust:100%}
+body{overflow-x:clip}
+@supports not (overflow:clip){html,body{overflow-x:hidden}}
+a,button,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+h1,h2,h3,h4,p{overflow-wrap:break-word}
+.cine{height:130svh}.cine-sticky{height:100svh}
+@media(max-width:980px){
+  nav,nav.scrolled{padding-left:max(5vw,env(safe-area-inset-left));padding-right:max(5vw,env(safe-area-inset-right))}
+  nav.open{backdrop-filter:none;-webkit-backdrop-filter:none;background:transparent;box-shadow:none}
+  .menu-btn{width:44px;height:44px;margin-right:-7px;z-index:2}
+  .menu-btn i{left:7px;width:30px}
+  .menu-btn i:nth-child(1){top:17px}.menu-btn i:nth-child(2){bottom:17px}
+  nav.open .menu-btn i:nth-child(1){top:21px;transform:rotate(45deg)}
+  nav.open .menu-btn i:nth-child(2){bottom:22px;transform:rotate(-45deg)}
+  nav.open .brand{position:relative;z-index:2}
+  nav.open .nav-links{z-index:1;height:100svh;overflow-y:auto;padding:90px 6vw 40px}
+  nav.open .nav-links a{padding:10px 16px;min-height:44px;display:flex;align-items:center}
+  .hero{min-height:100svh;padding-bottom:110px}
+  #scene3d{max-width:none}
+  .portrait-wrap{max-width:440px;margin:0 auto;width:calc(100% - 18px);margin-left:18px}
+  .map,.map iframe{min-height:320px}
+  .final{padding:110px 6vw}
+  .cine-cap p{letter-spacing:.18em}
+}
+@media(max-width:560px){
+  body{font-size:15.5px}
+  .brand svg{width:38px}
+  .brand span{font-size:.95rem}
+  .brand small{font-size:.5rem;letter-spacing:.2em}
+  h1{font-size:clamp(2.3rem,11vw,2.9rem);line-height:1.02}
+  h2{font-size:clamp(1.9rem,8.6vw,2.4rem)}
+  .eyebrow{font-size:.62rem;letter-spacing:.24em;gap:10px;margin-bottom:20px}
+  .eyebrow::before{width:24px}
+  .hero{padding-top:100px}
+  .hero p.lead{margin:22px 0 30px;font-size:1rem}
+  .hero .ctas{flex-direction:column;align-items:stretch}
+  .hero .ctas .btn,.final .btn{justify-content:center;width:100%}
+  .btn{padding:15px 22px;min-height:48px}
+  .hero-meta{left:6vw;right:calc(6vw + 74px);bottom:24px;font-size:.6rem;letter-spacing:.16em}
+  section{padding:72px 6vw}
+  .sec-head{margin-bottom:40px;gap:18px}
+  .marquee{padding:22px 0}
+  .marquee-track,.marquee-track span{gap:34px}
+  .portrait,.portrait-wrap::before{border-radius:160px 160px 6px 6px}
+  .portrait-wrap::before{inset:-12px 12px 12px -12px}
+  .portrait-wrap{width:calc(100% - 12px);margin-left:12px}
+  .badge{width:88px;height:88px;right:6px;bottom:30px}
+  .badge b{font-size:1.8rem}
+  .signature{font-size:1.6rem}
+  .card{padding:34px 24px 30px;min-height:0}
+  .card h3{font-size:1.55rem;margin-top:28px}
+  .card .idx{top:28px;right:24px}
+  .cine-cap h2{font-size:clamp(2rem,10vw,2.6rem)}
+  .features,.steps{gap:30px}
+  .step{padding-right:0}
+  .rev{padding:30px 24px}
+  .rev p{font-size:1.15rem}
+  .g-score{padding:12px 20px}
+  summary{font-size:1.18rem;min-height:44px}
+  details{padding:20px 0}
+  .info-list p{font-size:1.1rem;overflow-wrap:anywhere}
+  .contact .btn{justify-content:center}
+  .final{padding:90px 6vw}
+  .final h2{margin-bottom:30px}
+  footer{flex-direction:column;align-items:flex-start;padding:40px 6vw calc(96px + env(safe-area-inset-bottom))}
+  .letterbox{height:6vh}
+}
+@media(max-width:380px){
+  .brand span{font-size:.85rem}
+  .wa-menu a{font-size:.8rem;padding:11px 15px}
+}
+.wa-float{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom))}
+@media(hover:none){.cursor{display:none}.card::before{display:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"Dra. Nathalia F. M. Morais — Odontologia Especializada","telephone":"+55-11-97430-4085","address":{"@type":"PostalAddress","streetAddress":"Rua Princesa Isabel de Bragança, 235, Sala 1106","addressLocality":"Mogi das Cruzes","addressRegion":"SP","postalCode":"08710-460","addressCountry":"BR"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}</script>
 </head>
@@ -615,6 +690,18 @@ const clk=new THREE.Clock();
   mini.forEach((m,i)=>{const a=t*(.4+i*.15)+i*2.1,R=2.35;m.position.set(Math.cos(a)*R,Math.sin(a)*R*.35,Math.sin(a)*R*.9)});
   renderer.render(scene,cam)})();
 }
+</script>
+<script>
+(function(){
+  var nav=document.getElementById('nav'),btn=nav&&nav.querySelector('.menu-btn');
+  if(!nav||!btn)return;
+  function sync(){var o=nav.classList.contains('open');document.documentElement.style.overflow=o?'hidden':'';btn.setAttribute('aria-expanded',o?'true':'false');}
+  btn.addEventListener('click',function(){setTimeout(sync,0)});
+  nav.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');sync();})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');sync();}});
+  matchMedia('(min-width:981px)').addEventListener('change',function(m){if(m.matches){nav.classList.remove('open');sync();}});
+  btn.setAttribute('aria-expanded','false');
+})();
 </script>
 </body>
 </html>
